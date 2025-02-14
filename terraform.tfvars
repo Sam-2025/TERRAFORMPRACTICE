@@ -1,5 +1,0 @@
-type = "t2.micro"
-keypair = "Ironman123"
-ami = "ami-0ddfba243cbee3768"
-subnet = "subnet-04b493c59ce7a5f24"
-instance_name = "001"
