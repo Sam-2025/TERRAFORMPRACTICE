@@ -1,5 +1,5 @@
-AMI = "ami-0ddfba243cbee3768"
+AMI = "ami-0hg56765454666"
 INSTANCE_TYPE = "t3.micro"
-KEYPAIR = "Ironman123"
-SUBNET = "subnet-04b493c59ce7a5f24"
+KEYPAIR = "github"
+SUBNET = "subnet-0455f556654b"
 NAME = "Terraform"
