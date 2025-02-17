@@ -7,4 +7,7 @@ resource "aws_instance" "name" {
     Name = var.NAME
   }
 }
- 
+ resource "aws_s3_bucket" "name" {
+  bucket = "noupdate"
+   
+ }
