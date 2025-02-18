@@ -1,5 +1,5 @@
 AMI = "ami-0ddfba243cbee3768"
-INSTANCE_TYPE = "t2.micro"
+INSTANCE_TYPE = "t2.nano"
 KEYPAIR = "Ironman123"
 SUBNET = "subnet-04b493c59ce7a5f24"
 NAME = "01"
