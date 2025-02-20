@@ -1,0 +1,5 @@
+AMI = "ami-0ddfba243cbee4564"
+INSTANCE_TYPE = "t2.micro"
+KEYPAIR = "DR-DOOM"
+NAME_OF_INSTANCE = "Terraform_instance"
+SUBNET = "subnet-04b493565332"

@@ -1,1 +1,7 @@
-
+database-name        = "database"
+parameter-gp         = "default.mysql8.0"
+engine               = "mysql"
+engine-version       = "8.0"
+username             = "fardeen"
+password             = "8888313545"
+type-storage         = "db.t3.micro"
