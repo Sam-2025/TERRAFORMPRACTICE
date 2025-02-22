@@ -1,6 +1,6 @@
 module "new" {
   source = "../day8-source"
-     AMI = "ami-00bb6a80f01f03502"
+     AMI = "ami-0ddf9922794873d"
      INSTANCE_TYPE = "t2.micro"
-     SUBNET = "subnet-04b493c59ce7a5f24"
+     SUBNET = "subnet-04b49125646d"
 }
