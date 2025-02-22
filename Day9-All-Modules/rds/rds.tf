@@ -9,15 +9,15 @@ module "free_tier_rds" {
 
   db_name             = "demodb"
   username            = "admin"
-  password            = "8888313545"  # Use AWS Secrets Manager for security
+  password            = "mypasswd"  # Use AWS Secrets Manager for security
   port                = "3306"
 
   iam_database_authentication_enabled = true
   publicly_accessible                 = true
 
-  vpc_security_group_ids = ["sg-03b95ba1b4c579cb2"]
+  vpc_security_group_ids = ["sg-sd6s5563d6e6s5d6w66e"]
   create_db_subnet_group = true
-  subnet_ids             = ["subnet-04b493c59ce7a5f24", "subnet-0cda5ad3e644c6d65"]
+  subnet_ids             = ["subnet-123456789101112", "subnet-987654321987654"]
 
 
   backup_retention_period = 7
