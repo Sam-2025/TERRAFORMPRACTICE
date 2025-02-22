@@ -8,13 +8,13 @@
 #   instance_class    = "db.t3.micro"
 #   allocated_storage = 5
 
-#   db_name  = "demodb"
+#   db_name  = "database"
 #   username = "admin"
 #   port     = "3306"
 
 #   iam_database_authentication_enabled = true
 
-#   vpc_security_group_ids = ["sg-03b95ba1b4c579cb2"]
+#   vpc_security_group_ids = ["sg-03b91234567"]
 
 #   maintenance_window = "Mon:01:00-Mon:03:00"
 #   backup_window      = "03:00-06:00"
@@ -32,7 +32,7 @@
 
 #   # DB subnet group
 #   create_db_subnet_group = true
-#   subnet_ids             = ["subnet-0cda5ad3e644c6d65", "subnet-04b493c59ce7a5f24"]
+#   subnet_ids             = ["subnet-fd5s666764643", "subnet-04b513354sa44"]
 
 #   # DB parameter group
 #   family = "mysql5.7"
