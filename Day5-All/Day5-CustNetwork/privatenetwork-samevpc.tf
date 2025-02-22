@@ -41,7 +41,7 @@ resource "aws_route_table_association" "private" {
 }
 
 resource "aws_instance" "private" {
-  ami             = "ami-0ddfba243cbee3768"
+  ami             = "ami-0ddf9922794873d"
   key_name        = "Ironman123"
   subnet_id       = aws_subnet.private.id
   availability_zone = "ap-south-1c"
