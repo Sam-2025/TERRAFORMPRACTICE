@@ -1,7 +1,7 @@
 resource "aws_instance" "test" {
-  ami = "ami-554646426445sd4"
+  ami = "ami-0ddf9922794873d"
   instance_type = "t2.micro"
-  key_name = "Ironman123"
+  key_name = "keypair"
   tags = {
     Name = "import"
   }
