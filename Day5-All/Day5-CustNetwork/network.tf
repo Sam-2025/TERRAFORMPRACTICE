@@ -59,8 +59,8 @@ resource "aws_security_group" "cust" {
   }
 }
 resource "aws_instance" "cust" {
-     ami = "ami-0ddfba243cbee3768"
-     key_name = "Ironman123"
+     ami = "ami-0ddf9922794873d"
+     key_name = "keypair"
      instance_type = "t2.micro"
      subnet_id = aws_subnet.cust.id
      vpc_security_group_ids = [aws_security_group.cust.id]
