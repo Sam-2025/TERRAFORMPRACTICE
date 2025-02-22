@@ -1,8 +1,8 @@
 resource "aws_instance" "life" {
-    ami = "ami-0ddfba243cbee3768"
-    key_name = "Ironman123"
+    ami = "ami-0ddf99227948f73"
+    key_name = "keypair"
     instance_type = "t2.micro"
-    subnet_id = "subnet-0cda5ad3e644c6d65"                 /*Here subnet is changed */
+    subnet_id = "subnet-0c35667aeff64553"               /*Here subnet is changed */
     tags = {
       Name = " lifecycle_rules"
     }
