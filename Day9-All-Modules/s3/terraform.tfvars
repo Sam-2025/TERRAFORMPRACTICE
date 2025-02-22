@@ -1,4 +1,4 @@
-Baucket_Name     = "fardeen123"
+Baucket_Name     = "Mybucket"
 acl              = "private"
 object_ownership = "ObjectWriter"
 
