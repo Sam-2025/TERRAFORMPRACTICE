@@ -13,7 +13,7 @@ module "server_instance" {
 
 module "data_storage" {
   source      = "./modules/s3-child-module"
-  bucket_id   = "fardeen123"
+  bucket_id   = "mybuck"
   acl_list = "private"
   ownobject = "ObjectWriter"
 
