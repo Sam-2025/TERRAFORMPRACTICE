@@ -1,0 +1,7 @@
+#.tfstate file
+*.tfstate
+*.tfstate.*
+#.terraform.lock.hcl all files
+.terraform.lock.hcl
+#.terraform all directory inside files
+**/.terraform/*
