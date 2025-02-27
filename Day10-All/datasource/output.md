@@ -3,7 +3,7 @@ output "instance_public_ip" {
   value       = aws_instance.my_instance.public_ip
 }
 
-output "instance_private_ip" {
+output "instance_private_ip" { 
   description = "Private IP of the EC2 instance"
   value       = aws_instance.my_instance.private_ip
 }
