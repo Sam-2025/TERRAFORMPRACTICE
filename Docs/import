@@ -1,0 +1,11 @@
+1 Use terraform import (Recommended for Existing Resources)
+ ◦ If the manually added feature corresponds to a new resource that Terraform does not yet manage, you need to import it using terraform import.
+ ◦ This will map the existing remote resource to Terraform's state file without modifying the infrastructure.
+ ◦ After importing, update the Terraform configuration to match the imported resource.
+ 2 Simply Update Configuration (If Resource Already Exists in State)
+ ◦ If the resource is already in Terraform’s state but was modified manually, you can just update the configuration file to include the new feature.
+ ◦ Run terraform plan to see if Terraform detects any drift.
+ ◦ If Terraform does not detect the manual changes, you might need to run terraform refresh (or terraform apply -refresh-only in newer versions) to update the state file.
+Conclusion:
+ • For new resources manually created → terraform import is required.
+ • For modifications to already managed resources → Just update the configuration file and refresh the state.
