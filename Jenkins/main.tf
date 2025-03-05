@@ -3,7 +3,7 @@ provider "aws" {
 }
 locals {
   keypair  = "Ironman123"
-  typeinst = "t2.micro"
+  typeinst = "t2.medium"
   tag      = "J-E-N-K-I-N-S"
 }
 data "aws_ami" "fardeen" {
