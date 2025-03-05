@@ -33,6 +33,10 @@ resource "aws_key_pair" "pubkey" {
   tags = {
     Name = local.tag
   }
+   resource "aws_iam_instance_profile" "profile" {
+   name = "myec2-adminrole"
+   role = "EC2_ADMIN"
+   }
   provisioner "remote-exec" {
    inline = [
     "echo 'Granting full permissions...'",
