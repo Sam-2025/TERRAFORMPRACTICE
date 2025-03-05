@@ -21,4 +21,9 @@ sudo systemctl start jenkins
 sudo systemctl enable jenkins
 
 # Display Jenkins initial admin password
-cat /var/lib/jenkins/secrets/initialAdminPassword
+echo "Jenkins Initial Admin Password:"
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+# Ensure the password is displayed on login
+echo 'echo "Jenkins Initial Admin Password:"' >> ~/.bashrc
+echo 'sudo cat /var/lib/jenkins/secrets/initialAdminPassword' >> ~/.bashrc
