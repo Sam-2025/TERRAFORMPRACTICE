@@ -59,6 +59,3 @@ variable "skipsnp" {
   type = bool
   
 }
-variable "mw" {
-  
-}

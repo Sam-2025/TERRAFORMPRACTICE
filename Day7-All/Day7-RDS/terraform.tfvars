@@ -12,4 +12,3 @@ passwd = "password"
 skipsnp = false
 delprotn = false
 sgdb = "sg-sa35431344fs"
-mw = "sun:03:00-sun:04:00"

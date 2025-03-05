@@ -19,5 +19,5 @@ resource "aws_db_instance" "local" {
   skip_final_snapshot   = var.skipsnp
   vpc_security_group_ids = [var.sgdb]
   deletion_protection    = var.delprotn
-  maintenance_window     = var.mw
+  
 }
