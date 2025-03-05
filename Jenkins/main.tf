@@ -29,6 +29,7 @@ resource "aws_key_pair" "pubkey" {
   key_name      = aws_key_pair.pubkey.key_name
   instance_type = local.typeinst
   associate_public_ip_address = true
+  iam_instance_profile = aws_iam_instance_profile.profile.name
   user_data     = file("jenkin.sh")
   tags = {
     Name = local.tag
