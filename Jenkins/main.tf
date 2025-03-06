@@ -5,7 +5,7 @@ provider "aws" {
 }
 /*========================================== Locals =====================================================*/
 locals {
-  typeinst = "t2.micro"
+  typeinst = "t2.medium"
   tag      = "J-E-N-K-I-N-S"
 }
 
@@ -16,28 +16,16 @@ resource "aws_key_pair" "pubkey" {
   public_key = file("~/.ssh/id_rsa.pub")
 }
 
-  data "aws_subnet" "az" {
-    filter {
-      name = "tag:Name"
-      values = ["test"]
-    }
-  }
-
   resource "aws_instance" "jenkins" {
   ami           = data.aws_ami.fardeen.id
   subnet_id     = data.aws_subnet.mumb.id
   key_name      = aws_key_pair.pubkey.key_name
   instance_type = local.typeinst
   associate_public_ip_address = true
-  iam_instance_profile = aws_iam_instance_profile.profile.name
   user_data     = file("jenkin.sh")
   tags = {
     Name = local.tag
   }
-   resource "aws_iam_instance_profile" "profile" {
-   name = "myec2-adminrole"
-   role = "EC2_ADMIN"
-   }
   provisioner "remote-exec" {
    inline = [
     "echo 'Granting full permissions...'",
