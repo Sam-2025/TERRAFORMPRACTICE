@@ -5,8 +5,8 @@ resource "aws_instance" "sample" {
   ami = "ami-0d682f26195e9ec0f"
   subnet_id = "subnet-0cda5ad3e644c6d65"
   key_name = "Ironman123"
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   tags = {
-    Name = "SCM-02"
+    Name = "SCM-03"
   }
 }
