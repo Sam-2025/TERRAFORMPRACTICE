@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('001') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Fardeen313/TERRAFORMPRACTICE.git'
+            }
+        }
+        stage('002') {
+            steps {
+                dir('sample-ec2') {
+                  sh 'terraform init'
+               }
+            }
+        }
+        stage('003') {
+            steps {
+               dir('sample-ec2') {
+                  sh 'terraform plan'
+               }
+            }
+        }
+        stage('004') {
+            steps {
+                dir('sample-ec2') {
+                  sh'terraform ${jenkins}'
+               }
+            }
+        }
+    }
+}
