@@ -7,6 +7,6 @@ resource "aws_instance" "sample" {
   key_name = "Ironman123"
   instance_type = "t2.micro"
   tags = {
-    Name = "webhook-triggerd-instance" //123
+    Name = "webhook-triggerd-instance" 
   }
 }
