@@ -24,7 +24,7 @@ pipeline {
         stage('04') {
             steps {
                 dir('sample-ec2') {
-                  sh'terraform destroy -auto-approve'
+                  sh'terraform apply -auto-approve'
                }
             }
         }
