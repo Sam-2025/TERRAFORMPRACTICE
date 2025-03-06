@@ -7,6 +7,6 @@ resource "aws_instance" "sample" {
   key_name = "Ironman123"
   instance_type = "t2.micro"
   tags = {
-    Name = "SCM-01"
+    Name = "SCM-02"
   }
 }
