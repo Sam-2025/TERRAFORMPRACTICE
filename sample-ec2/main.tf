@@ -7,6 +7,6 @@ resource "aws_instance" "sample" {
   key_name = "samkey"
   instance_type = "t3.micro"
   tags = {
-    Name = "SCM" 
+    Name = "SCM-01" 
   }
 }
